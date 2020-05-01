@@ -1,3 +1,4 @@
+ `mert karababa 20160807017` 
 # pl-evaluation-solidity
 
   
@@ -171,4 +172,41 @@ Finally, the functions that can be specified at the end of the contract and then
 On the other hand, sending money to anyone else on the network can be used by anyone who already has this cryptocurrency. If there is not enough money to be sent, the require call will fail and an appropriate error message will be sent to the user.
  
  
- `mert karababa 20160807017` 
+
+ 
+ ### Things that are specific to this language?
+ 
+- There are three things –types, specifically–that make Solidity so unique.
+
+#### Address
+In Solidity, there is a type called address and it is a 160-bit value used for storing the wallet address of a contract. It must be set as public and when the code is compiled, a function is auto-generated allowing you to access the current value of that variable. This is especially relevant if you want to have multiple contracts working together.
+
+```
+contract Auction {
+   address public beneficiary;
+}
+```
+Variables of type address have access to several members that add to its’ functionality: balance ,transfer, send, call, callcode, and delegatecall.
+
+#### Mapping
+Mapping is essentially like a dictionary or hash table in most other programming languages. It accepts key-value pairs which is perfect for storing pairs of addresses and values.
+
+```
+contract Account {
+    mapping(address => uint) balances;
+}
+```
+#### Event
+Event can be fired from a function when a certain condition is met. User interfaces can listen for those events being fired and the listener can receive arguments from, to, and amount which makes it easy to track and display transaction information as seen in the example below.
+```
+
+contract Store {
+    event PurchaseComplete(address from, address to, uint amount);
+    function purchaseItem(address seller, uint amount) public payable {
+        // Code to purchase goes here...
+        PurchaseComplete(msg.sender, seller, msg.value);
+    }
+}
+
+```
+- Other than these 3 special types, many other common value and reference types exist like Booleans, Integers, Arrays, Strings, Enums, Functions Types, and Structs and they work similarly to how they work in other programming languages.
