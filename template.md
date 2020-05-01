@@ -58,23 +58,17 @@ Due to the infrastructure created by Ethereum, this contract has no function oth
 
 - what does exactly that Coin example do?.
 
-The evaluation agreement is written in the simplest way to create a cryptocurrency. It is possible to generate cryptocurrencies with Ethereum smart contracts, but for this, the creator can do it (it is possible to implement a different regulation plan). Anyone on the network can send and receive money that you can use with the username and password without needing to register somewhere - the only reason you do is an Ethereum key pair.
+The evaluation agreement is written in the simplest way to create a cryptocurrency. It is possible to generate cryptocurrencies with Ethereum smart contracts, but only the creator can do it. Anyone on the network can send and receive money without needing to register somewhere - the only thing you need is  an Ethereum key pair.
 
 ```
 pragma solidity ^0.5.0;
 
 contract Coin {
-    // The keyword "public" makes those variables
-    // easily readable from outside.
+   
     address public minter;
     mapping (address => uint) public balances;
-
-    // Events allow light clients to react to
-    // changes efficiently.
     event Sent(address from, address to, uint amount);
 
-    // This is the constructor whose code is
-    // run only when the contract is created.
     constructor() public {
         minter = msg.sender;
     }
@@ -93,5 +87,9 @@ contract Coin {
     }
 }
 ```
+Explanation of this ` Coin`  line by line
+ First of all this contract introduces some new concepts,let's check new concepts one by one.
+-```Address public minter;``` The line declares a generally accessible address type status variable. The address type is a 160-bit value that does not allow arithmetic operations. This type is suitable for storing their contractual addresses or key pairs of external persons. The public keyword has a function that allows the current value of the status variable to be accessed from outside the contract. Access to this variable from other contracts is not allowed if this keyword is not used.
+- The next line, mapping (address => uint) public balances; also creates a public state variable, but it is a more complex datatype. The type maps addresses to unsigned integers. Mappings can be seen as hash tables which are virtually initialized such that every possible key exists and is mapped to a value whose byte-representation is all zeros.
 
  `mert karababa 20160807017` 
