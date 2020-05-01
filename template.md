@@ -25,6 +25,7 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 -  Solidity is written statically. It supports inter-object heritage relationship, libraries and user-defined complex types, among other things.
 ---------------------
 ### Why Solidity invented
+
 It is an object oriented, high level programming language developed for the implementation of smart contracts.
 Smart contracts are programs that manage the behavior of transactions on the Ethereum network.
 ------------------------
