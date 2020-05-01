@@ -51,7 +51,7 @@ Advantages of Solidity in Developing Smart Contracts in Blockchain Applications.
   5-Solidity has a similar syntax to JavaScript and C++ that makes it easier to learn Blockchain development basics for those with respective skills. The same source code for Solidity can be written in C++ too.
   
 -------------------------------
-### How to setup an environment to use it in different platforms (windows, mac, linux)
+### How to setup an environment to use Solidity in different platforms (windows, mac, linux)
  
 -  Step 1 npm / Node.js
 
