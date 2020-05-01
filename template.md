@@ -92,4 +92,6 @@ Explanation of this ` Coin`  line by line
 - ```Address public minter;``` The line declares a generally accessible address type status variable. The address type is a 160-bit value that does not allow arithmetic operations. This type is suitable for storing their contractual addresses or key pairs of external persons. The public keyword has a function that allows the current value of the status variable to be accessed from outside the contract. Access to this variable from other contracts is not allowed if this keyword is not used.
 - ``` mapping (address => uint) public balances;``` also creates a public state variable, but it is a more complex datatype. The type maps addresses to unsigned integers. Mappings can be seen as hash tables which are virtually initialized such that every possible key exists and is mapped to a value whose byte-representation is all zeros.
 
+- ```event Sent(address from, address to, uint amount;``` declares a so-called “event” which is emitted in the last line of the function send. User interfaces (as well as server applications of course) can listen for those events being emitted on the blockchain without much cost. As soon as it is emitted, the listener will also receive the arguments from, to and amount, which makes it easy to track transactions. In order to listen for this event, you would use
+
  `mert karababa 20160807017` 
