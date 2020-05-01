@@ -94,8 +94,9 @@ Explanation of this ` Coin`  line by line
 
 - ```event Sent(address from, address to, uint amount;``` declares a so-called “event” which is emitted in the last line of the function send. User interfaces (as well as server applications of course) can listen for those events being emitted on the blockchain without much cost. As soon as it is emitted, the listener will also receive the arguments from, to and amount, which makes it easy to track transactions.To listen to this event, you need to use the following JavaScript code (Here it is assumed that Coin is a contract object created via web3.js or similar module):
 
-  ---------------------------
-  ``` 
+ 
+ ```
+  
   Coin.Sent().watch({}, '', function(error, result) {
   if (!error) {
         console.log("Coin transfer: " + result.args.amount +
@@ -106,7 +107,8 @@ Explanation of this ` Coin`  line by line
             "Receiver: " + Coin.balances.call(result.args.to));
     }
 })
-```
+
+ ```
  The Constructer function ''Coin'' is a special function that is specified only during the creation of the contract and cannot be called later. It permanently stores the address of the contract creator: msg (with tx and block) is a special global variable that contains some features that allow access to the blockchain. msg.sender is always the address where a valid (external) function call comes.
 
 ----------------------------
