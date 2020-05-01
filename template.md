@@ -28,7 +28,8 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 ------------------------
 ### Examples
 - this example is one of the `smart contract` but simple one. 
-- what does exactly that smart contract example do?
+- what does exactly that smart contract example do? ss.
+
 That sets the value of a variable and exposes it for other contracts to access.
 
 ```pragma solidity >=0.4.0 <0.7.0;
