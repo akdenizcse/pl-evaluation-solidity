@@ -23,12 +23,15 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 - Contributors to enable writing smart contracts on blockchain platforms such as Ethereum.
 -  Solidity includes targeting Ethereum Virtual Machine (ESM) from C ++, Python and JavaScript.
 -  Solidity is written statically. It supports inter-object heritage relationship, libraries and user-defined complex types, among other things.
+
 ---------------------
-### Why Solidity invented
+
+### Why Solidity was  invented
 
 It is an object oriented, high level programming language developed for the implementation of smart contracts.
 Smart contracts are programs that manage the behavior of transactions on the Ethereum network.
 
+------------------
 ### When/why shall we use Solidity
 - WHEN?.
 
