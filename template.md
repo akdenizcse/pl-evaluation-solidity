@@ -27,6 +27,7 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 #### Why Solidity invented
 ------------------------
 ### Examples
+ ####SimpleStorage example
 - this example is one of the `smart contract` but simple one. 
 - what does exactly that smart contract example do? .
 
@@ -53,12 +54,41 @@ Explanation of this `Simple smart contract`  line by line
 ------------------------
 - General meaning of this Smart Contract;
 Due to the infrastructure created by Ethereum, this contract has no function other than providing anyone access to this variable you assign on Earth. Of course, anyone can publish a contract that contains a variable that is equal to a different value like this, or want to change the value of your variable, but your contract and variable value are stored in the blockchain along with its date. Next, we will see how you can implement access restrictions so that only you can change your own variable.
+--------------------------
+####Example of receiving and sending money
 
+```
+pragma solidity ^0.5.0;
 
+contract Coin {
+    // The keyword "public" makes those variables
+    // easily readable from outside.
+    address public minter;
+    mapping (address => uint) public balances;
 
+    // Events allow light clients to react to
+    // changes efficiently.
+    event Sent(address from, address to, uint amount);
 
+    // This is the constructor whose code is
+    // run only when the contract is created.
+    constructor() public {
+        minter = msg.sender;
+    }
 
+    function mint(address receiver, uint amount) public {
+        require(msg.sender == minter);
+        require(amount < 1e60);
+        balances[receiver] += amount;
+    }
 
-
+    function send(address receiver, uint amount) public {
+        require(amount <= balances[msg.sender], "Insufficient balance.");
+        balances[msg.sender] -= amount;
+        balances[receiver] += amount;
+        emit Sent(msg.sender, receiver, amount);
+    }
+}
+```
 
  `mert karababa 20160807017` 
