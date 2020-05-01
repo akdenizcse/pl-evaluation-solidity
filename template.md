@@ -215,10 +215,10 @@ contract Store {
 
 ### Conclusion
 
--Solidity language is an easy-to-learn language because it looks like a combination of languages ike c ++, phyton and java scripts, but it is not possible to find many resources related to this language since it has appeared in recent years.
+- Solidity language is an easy-to-learn language because it looks like a combination of languages ike c ++, phyton and java scripts, but it is not possible to find many resources related to this language since it has appeared in recent years.
 
--Solidity focuses on smart contracts with its unique features and is currently one of the most popular languages.
+- Solidity focuses on smart contracts with its unique features and is currently one of the most popular languages.
 
--Before learning these 3 concepts;`Smart Contracts`,`Blockchain Basics`,`Ethereum Virtual Machine`,
- you cannot write anything with solidity language. 
- -So if you want to make progress in this area, you need to spend a lot of time with limited articles and information, even if you will make good money in the end.
+- Before learning these 3 concepts;`Smart Contracts`,`Blockchain Basics`,`Ethereum Virtual Machine`,
+ you cannot accomplish anything with solidity language. 
+ - So if you want to make progress in this area, you need to spend a lot of time with limited articles and information, even if you will make good money in the end.
