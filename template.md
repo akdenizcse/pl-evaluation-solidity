@@ -56,7 +56,8 @@ Due to the infrastructure created by Ethereum, this contract has no function oth
 --------------------------
 #### Coin example
 
-- what does exactly that Coin example do? .
+- what does exactly that Coin example do?.
+
 The evaluation agreement is written in the simplest way to create a cryptocurrency. It is possible to generate cryptocurrencies with Ethereum smart contracts, but for this, the creator can do it (it is possible to implement a different regulation plan). Anyone on the network can send and receive money that you can use with the username and password without needing to register somewhere - the only reason you do is an Ethereum key pair.
 
 ```
