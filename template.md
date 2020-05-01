@@ -72,12 +72,13 @@ We provide up to date docker builds for the compiler. The stable repository cont
  
  Currently, the docker image only contains the compiler executable, so you have to do some additional work to link in the source and output directories.
 https://github.com/ethereum/solidity/releases (This download link contains windows, mac,linux etc. versions )
-   -  Remix (DOWNLOAD WITHOUT ANYTHING YOU CAN START LEARNING)
+  
+  -  Remix (DOWNLOAD WITHOUT ANYTHING YOU CAN START LEARNING)
    
 We recommend Remix for small contracts and for quickly learning Solidity.
 Access Remix online, you don’t need to install anything. If you want to use it without connection to the Internet, go to https://github.com/ethereum/browser-solidity/tree/gh-pages and download the .ZIP file as explained on that page.
 
-Further options on this page detail installing commandline Solidity compiler software on your computer. Choose a commandline compiler if you are working on a larger contract or if you require more compilation option
+
 ----------------------------------
 ### Examples
  #### SmartContract example
