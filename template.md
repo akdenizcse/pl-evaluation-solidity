@@ -92,6 +92,25 @@ Explanation of this ` Coin`  line by line
 - ```Address public minter;``` The line declares a generally accessible address type status variable. The address type is a 160-bit value that does not allow arithmetic operations. This type is suitable for storing their contractual addresses or key pairs of external persons. The public keyword has a function that allows the current value of the status variable to be accessed from outside the contract. Access to this variable from other contracts is not allowed if this keyword is not used.
 - ``` mapping (address => uint) public balances;``` also creates a public state variable, but it is a more complex datatype. The type maps addresses to unsigned integers. Mappings can be seen as hash tables which are virtually initialized such that every possible key exists and is mapped to a value whose byte-representation is all zeros.
 
-- ```event Sent(address from, address to, uint amount;``` declares a so-called “event” which is emitted in the last line of the function send. User interfaces (as well as server applications of course) can listen for those events being emitted on the blockchain without much cost. As soon as it is emitted, the listener will also receive the arguments from, to and amount, which makes it easy to track transactions. In order to listen for this event, you would use
+- ```event Sent(address from, address to, uint amount;``` declares a so-called “event” which is emitted in the last line of the function send. User interfaces (as well as server applications of course) can listen for those events being emitted on the blockchain without much cost. As soon as it is emitted, the listener will also receive the arguments from, to and amount, which makes it easy to track transactions.To listen to this event, you need to use the following JavaScript code (Here it is assumed that Coin is a contract object created via web3.js or similar module):
 
+Coin.Sent().watch({}, '', function(error, result) {
+  ``` 
+  ```
+  if (!error) {
+        console.log("Coin transfer: " + result.args.amount +
+            " coins were sent from " + result.args.from +
+            " to " + result.args.to + ".");
+        console.log("Balances now:\n" +
+            "Sender: " + Coin.balances.call(result.args.from) +
+            "Receiver: " + Coin.balances.call(result.args.to));
+    }
+})
+```
+ The Constructer function ''Coin'' is a special function that is specified only during the creation of the contract and cannot be called later. It permanently stores the address of the contract creator: msg (with tx and block) is a special global variable that contains some features that allow access to the blockchain. msg.sender is always the address where a valid (external) function call comes.
+```
+
+Finally, the functions that can be specified at the end of the contract and then called by users and other contracts are the mint and send functions. If the mint function is called by anyone other than the contractor, it will not cause any changes. This is guaranteed by a special function that rejects any changes if the argument require require is false. The second require call is to prevent too much money to cause overflow errors later.
+
+On the other hand, sending money to anyone else on the network can be used by anyone who already has this cryptocurrency. If there is not enough money to be sent, the require call will fail and an appropriate error message will be sent to the user.
  `mert karababa 20160807017` 
