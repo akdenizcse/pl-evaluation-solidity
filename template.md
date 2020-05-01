@@ -28,7 +28,6 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 ------------------------
 ### Examples
  #### SmartContract example
-- this example is one of the `smart contract` but simple one. 
 - what does exactly that smart contract example do? .
 
 This code gives value one variable and try to access this variable with another contract.
@@ -55,7 +54,10 @@ Explanation of this `Simple smart contract`  line by line
 - General meaning of this Smart Contract;
 Due to the infrastructure created by Ethereum, this contract has no function other than providing anyone access to this variable you assign on Earth. Of course, anyone can publish a contract that contains a variable that is equal to a different value like this, or want to change the value of your variable, but your contract and variable value are stored in the blockchain along with its date. Next, we will see how you can implement access restrictions so that only you can change your own variable.
 --------------------------
-#### Example of receiving and sending money
+#### Coin example
+
+- what does exactly that Coin example do? .
+The evaluation agreement is written in the simplest way to create a cryptocurrency. It is possible to generate cryptocurrencies with Ethereum smart contracts, but for this, the creator can do it (it is possible to implement a different regulation plan). Anyone on the network can send and receive money that you can use with the username and password without needing to register somewhere - the only reason you do is an Ethereum key pair.
 
 ```
 pragma solidity ^0.5.0;
