@@ -35,6 +35,30 @@ With this language, you can write smart contracts, voting, crowdfunding, auction
 
 - WHY?.
 
+###How to setup an environment to use it in different platforms (windows, mac, linux)
+ 
+-  Step 1 npm / Node.js
+
+Use npm for a convenient and portable way to install solcjs, a Solidity compiler.
+This download link contains windows, mac,linux etc. versions .
+https://nodejs.org/en/download/
+
+-  Step 2  Programming Language
+ We need a programming language that compile our smart contract into bytecode that the Ethereum virtual machine can understand. There are different options but by far the most popular is a solidity.
+  `npm install -g solc`
+ - Step 3 Docker
+We provide up to date docker builds for the compiler. The stable repository contains released versions while the nightly repository contains potentially unstable changes in the develop branch.
+ `docker run ethereum/solc:stable solc --version`
+ - Step 4 Binary Packages
+ Currently, the docker image only contains the compiler executable, so you have to do some additional work to link in the source and output directories.
+https://github.com/ethereum/solidity/releases (This download link contains windows, mac,linux etc. versions )
+Remix
+We recommend Remix for small contracts and for quickly learning Solidity.
+
+Access Remix online, you don’t need to install anything. If you want to use it without connection to the Internet, go to https://github.com/ethereum/browser-solidity/tree/gh-pages and download the .ZIP file as explained on that page.
+
+Further options on this page detail installing commandline Solidity compiler software on your computer. Choose a commandline compiler if you are working on a larger contract or if you require more compilation optio
+
 Advantages of Solidity in Developing Smart Contracts in Blockchain Applications.
 
   1-Solidity provides object-oriented programming attributes in contracts including multiple level inheritance properties.
