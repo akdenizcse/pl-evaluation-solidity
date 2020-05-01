@@ -27,8 +27,8 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 #### Why Solidity invented
 ------------------------
 ### Examples
-- this example is one of the `smart contract` but simple one.
-what does exactly that smart contract example do?
+- this example is one of the `smart contract` but simple one. 
+- what does exactly that smart contract example do?
 That sets the value of a variable and exposes it for other contracts to access.
 
 ```pragma solidity >=0.4.0 <0.7.0;
@@ -46,7 +46,13 @@ contract SimpleStorage {
 }'
 ```
 Explanation of this `Simple smart contract` 
--The first line simply says that the source code is written for Solidity version 0.4.0 or a newer version that does not disrupt functionality (does not include those up to version 0.6.0).
+-  The first line simply says that the source code is written for Solidity version 0.4.0 or a newer version that does not disrupt functionality (does not include those up to version 0.6.0).
 
 
- `mert` 
+
+
+
+
+
+
+ `mert karababa 20160807017` 
