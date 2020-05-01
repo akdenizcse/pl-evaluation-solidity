@@ -29,7 +29,7 @@ It is an object oriented, high level programming language developed for the impl
 Smart contracts are programs that manage the behavior of transactions on the Ethereum network.
 ------------------------
 ### When/why shall we use Solidity
--WHEN?
+- WHEN?
 With this language, you can write smart contracts, voting, crowdfunding, auction and multi-signature wallets.
 
 - WHY 
