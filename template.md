@@ -12,7 +12,7 @@
  - August 2014: The Solidity language is proposed by Gavin Wood
  - October 2014: Solidity is adopted as a language by Monax, a rival platform.
  -  August 2015: Solidity is officially released.
- ------------------
+
  
 Explanation about the history and authors of `Solidity` .
 -  Solidity is a high-level, human-readable code that breaks it down into specific instructions that are easily understandable for machines. The main advantages of using Solidity include:
