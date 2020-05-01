@@ -104,7 +104,7 @@ contract SimpleStorage {
 Explanation of this `Simple smart contract`  line by line
 -  The first line simply says that the source code is written for Solidity version 0.4.0 or a newer version that does not disrupt functionality (does not include those up to version 0.6.0).This is used to ensure that the contract may behave differently or be corrupted, not compatible with a new (compiler) version of the compiler.
 - The uint storedData line defines a status variable named storedDate of unit type (256 bit integer). You can think of this as a database information that can be cooled and replaced with the functions used in the contract. When it comes to Ethereum, this is always a contract of ownership. And in this case, the set and get functions can be used to change the value of the variable or to call the variable.
-------------------------
+
 - General meaning of this Smart Contract;
 Due to the infrastructure created by Ethereum, this contract has no function other than providing anyone access to this variable you assign on Earth. Of course, anyone can publish a contract that contains a variable that is equal to a different value like this, or want to change the value of your variable, but your contract and variable value are stored in the blockchain along with its date. Next, we will see how you can implement access restrictions so that only you can change your own variable.
 --------------------------
@@ -165,7 +165,7 @@ Explanation of this ` Coin`  line by line
  ```
  The Constructer function ''Coin'' is a special function that is specified only during the creation of the contract and cannot be called later. It permanently stores the address of the contract creator: msg (with tx and block) is a special global variable that contains some features that allow access to the blockchain. msg.sender is always the address where a valid (external) function call comes.
 
-----------------------------
+
 Finally, the functions that can be specified at the end of the contract and then called by users and other contracts are the mint and send functions. If the mint function is called by anyone other than the contractor, it will not cause any changes. This is guaranteed by a special function that rejects any changes if the argument require require is false. The second require call is to prevent too much money to cause overflow errors later.
 
 On the other hand, sending money to anyone else on the network can be used by anyone who already has this cryptocurrency. If there is not enough money to be sent, the require call will fail and an appropriate error message will be sent to the user.
