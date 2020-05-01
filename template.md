@@ -15,7 +15,7 @@
  ------------------
  
 Explanation about the history and authors of `Solidity` .
- 
+-  Solidity is a high-level, human-readable code that breaks it down into specific instructions that are easily understandable for machines. The main advantages of using Solidity include:
 - Solidity was first proposed by Gavin Wood in August 2014, but the language was later developed by the Ethereum team.
 Ethereum team includes  Christian Reitwiessner, Alex Beregszaszi, Yoichi Hirai and several former Ethereum core
 Solidity is an object-oriented programming language for writing smart contracts.
@@ -24,8 +24,22 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 -  Solidity includes targeting Ethereum Virtual Machine (ESM) from C ++, Python and JavaScript.
 -  Solidity is written statically. It supports inter-object heritage relationship, libraries and user-defined complex types, among other things.
 ---------------------
-#### Why Solidity invented
+### Why Solidity invented
+It is an object oriented, high level programming language developed for the implementation of smart contracts.
+Smart contracts are programs that manage the behavior of transactions on the Ethereum network.
 ------------------------
+### When/why shall we use Solidity
+-WHEN?
+With this language, you can write smart contracts, voting, crowdfunding, auction and multi-signature wallets.
+
+- WHY 
+Advantages of Solidity in Developing Smart Contracts in Blockchain Applications.
+  1-Solidity provides object-oriented programming attributes in contracts including multiple level inheritance properties.
+  2-Solidity developed for Contracts maintains multiple members of variables in order to represent and arrangements.
+  3-Multiple types of supporting roles are also carried in Solidity through the expediting Application Binary Interface.
+  4-Using contracts fundraising can be done and can provide solutions for various problems raised like third-party expenses and reduce the cost of managing data.
+  5-Solidity has a similar syntax to JavaScript and C++ that makes it easier to learn Blockchain development basics for those with respective skills. The same source code for Solidity can be written in C++ too.
+-------------------------------
 ### Examples
  #### SmartContract example
 - what does exactly that smart contract example do? .
@@ -115,4 +129,6 @@ Explanation of this ` Coin`  line by line
 Finally, the functions that can be specified at the end of the contract and then called by users and other contracts are the mint and send functions. If the mint function is called by anyone other than the contractor, it will not cause any changes. This is guaranteed by a special function that rejects any changes if the argument require require is false. The second require call is to prevent too much money to cause overflow errors later.
 
 On the other hand, sending money to anyone else on the network can be used by anyone who already has this cryptocurrency. If there is not enough money to be sent, the require call will fail and an appropriate error message will be sent to the user.
+ 
+ 
  `mert karababa 20160807017` 
