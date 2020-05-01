@@ -32,8 +32,8 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 
 This code gives value one variable and try to access this variable with another contract.
 
-```pragma solidity >=0.4.0 <0.7.0;
-  pragma solidity >=0.4.0 <0.6.0;
+`pragma solidity >=0.4.0 <0.7.0;
+  
 contract SimpleStorage {
     uint storedData;
 
