@@ -29,16 +29,24 @@ It is an object oriented, high level programming language developed for the impl
 Smart contracts are programs that manage the behavior of transactions on the Ethereum network.
 ------------------------
 ### When/why shall we use Solidity
-- WHEN?
+- WHEN?.
+
 With this language, you can write smart contracts, voting, crowdfunding, auction and multi-signature wallets.
 
-- WHY 
+- WHY?.
+
 Advantages of Solidity in Developing Smart Contracts in Blockchain Applications.
+
   1-Solidity provides object-oriented programming attributes in contracts including multiple level inheritance properties.
+  
   2-Solidity developed for Contracts maintains multiple members of variables in order to represent and arrangements.
+  
   3-Multiple types of supporting roles are also carried in Solidity through the expediting Application Binary Interface.
+  
   4-Using contracts fundraising can be done and can provide solutions for various problems raised like third-party expenses and reduce the cost of managing data.
+  
   5-Solidity has a similar syntax to JavaScript and C++ that makes it easier to learn Blockchain development basics for those with respective skills. The same source code for Solidity can be written in C++ too.
+  
 -------------------------------
 ### Examples
  #### SmartContract example
