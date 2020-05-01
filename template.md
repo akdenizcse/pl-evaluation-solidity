@@ -30,7 +30,7 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 - this example is one of the `smart contract` but simple one. 
 - what does exactly that smart contract example do? .
 
-That sets the value of a variable and exposes it for other contracts to access.
+This code gives value one variable and try to access this variable with another contract.
 
 ```pragma solidity >=0.4.0 <0.7.0;
 
@@ -46,8 +46,12 @@ contract SimpleStorage {
     }
 }'
 ```
-Explanation of this `Simple smart contract` 
--  The first line simply says that the source code is written for Solidity version 0.4.0 or a newer version that does not disrupt functionality (does not include those up to version 0.6.0).
+Explanation of this `Simple smart contract`  line by line
+-  The first line simply says that the source code is written for Solidity version 0.4.0 or a newer version that does not disrupt functionality (does not include those up to version 0.6.0).This is used to ensure that the contract may behave differently or be corrupted, not compatible with a new (compiler) version of the compiler.
+- The uint storedData line defines a status variable named storedDate of unit type (256 bit integer). You can think of this as a database information that can be cooled and replaced with the functions used in the contract. When it comes to Ethereum, this is always a contract of ownership. And in this case, the set and get functions can be used to change the value of the variable or to call the variable.
+------------------------
+- General meaning of this Smart Contract;
+Due to the infrastructure created by Ethereum, this contract has no function other than providing anyone access to this variable you assign on Earth. Of course, anyone can publish a contract that contains a variable that is equal to a different value like this, or want to change the value of your variable, but your contract and variable value are stored in the blockchain along with its date. Next, we will see how you can implement access restrictions so that only you can change your own variable.
 
 
 
