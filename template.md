@@ -171,7 +171,7 @@ Finally, the functions that can be specified at the end of the contract and then
 
 On the other hand, sending money to anyone else on the network can be used by anyone who already has this cryptocurrency. If there is not enough money to be sent, the require call will fail and an appropriate error message will be sent to the user.
  
- 
+ ------------------------------------------
 
  
  ### Things that are specific to this language?
@@ -210,3 +210,12 @@ contract Store {
 
 ```
 - Other than these 3 special types, many other common value and reference types exist like Booleans, Integers, Arrays, Strings, Enums, Functions Types, and Structs and they work similarly to how they work in other programming languages.
+
+-------------------------------------------
+
+###Conclusion
+
+Solidity language is an easy-to-learn language because it looks like a combination of languages ike c ++, phyton and java scripts, but it is not possible to find many resources related to this language since it has appeared in recent years.
+Solidity focuses on smart contracts with its unique features and is currently one of the most popular languages.
+Before learning these 3 concepts;`Smart Contracts`,`Blockchain Basics`,`Ethereum Virtual Machine`,
+ you cannot write anything with solidity language. So if you want to make progress in this area, you need to spend a lot of time with limited articles and information, even if you will make good money in the end.
