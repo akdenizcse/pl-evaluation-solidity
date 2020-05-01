@@ -28,7 +28,7 @@ It is used for implementing smart contracts on various blockchain platforms, mos
 
 It is an object oriented, high level programming language developed for the implementation of smart contracts.
 Smart contracts are programs that manage the behavior of transactions on the Ethereum network.
-------------------------
+
 ### When/why shall we use Solidity
 - WHEN?.
 
